@@ -1,0 +1,19 @@
+{
+	"Print to console": {
+        "prefix": "vue3-less",  // 模板的名称
+        "body": [          // 模板的结构（骨架）
+            "<template>",
+			"<div></div>",
+            "</template>",
+            "",
+            "<script  setup lang=\"ts\" name=\"\">",
+			" $1",
+            "</script>",
+            "",
+            "<style lang=\"less\">",
+            " $1",
+            "</style>"
+        ],
+        "description": "Log output to console",
+    }
+}
