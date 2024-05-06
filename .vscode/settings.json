@@ -2,5 +2,6 @@
     "cSpell.words": [
         "commitlint",
         "stylelint"
-    ]
+    ],
+    "prettier.useEditorConfig": true
 }

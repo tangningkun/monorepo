@@ -1,0 +1,16 @@
+{
+    "name": "@setting/vite",
+    "version": "0.0.1",
+    "private": true,
+    "main": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "clean": "pnpm  node_modules dist .turbo",
+        "prepack": "pnpm unbuild --stub"
+    },
+    "type": "module",
+    "dependencies": {
+        "@vitejs/plugin-vue": "^5.0.4",
+        "vite": "^5.2.0"
+    }
+}
