@@ -1,8 +1,9 @@
 import { ConfigEnv, loadEnv, UserConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import { resolve } from 'path';
+import qiankun from 'vite-plugin-qiankun';
 
-export async function createViteConfig({ command, mode, isSsrBuild, isPreview }: ConfigEnv): Promise<UserConfig> {
+export async function createViteConfig({ command, mode, isSsrBuild, isPreview }: ConfigEnv, isBuildMrco: boolean = false): Promise<UserConfig> {
     console.log('command==>', command);
     console.log('mode==>', mode);
     console.log('isSsrBuild==>', isSsrBuild);
