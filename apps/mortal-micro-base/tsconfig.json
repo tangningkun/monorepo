@@ -1,30 +1,30 @@
 {
-    "extends": "@setting/tsconfig/base.json",
-    "compilerOptions": {
-        "target": "esnext",
-        "module": "esnext",
-        "jsx": "preserve",
-        "moduleResolution": "node",
-        "baseUrl": ".",
-        "paths": {
-            "@/*": [
-                "src/*"
-            ],
-            "#/*": [
-                "src/*"
-            ]
-        },
-        "lib": [
-            "dom",
-            "esnext"
-        ],
-        "types": [
-            "vite/client",
-        ]
+  "extends": "@setting/tsconfig/base.json",
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "#/*": [
+        "src/*"
+      ]
     },
-    "include": [
-        "src",
-        "mock",
-        "vite.config.ts",
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "types": [
+      "vite/client",
     ]
+  },
+  "include": [
+    "src",
+    "mock",
+    "vite.config.ts",
+  ]
 }

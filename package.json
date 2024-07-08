@@ -12,14 +12,16 @@
   "devDependencies": {
     "@setting/lint": "workspace:*",
     "@setting/tsconfig": "workspace:*",
-    "turbo": "^1.13.0",
     "@types/node": "^20.12.7",
     "cross-env": "^7.0.3",
     "rimraf": "^5.0.5",
+    "turbo": "^1.13.0",
     "typescript": "^5.4.5",
     "unbuild": "^2.0.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "vite-plugin-qiankun": "^1.0.15"
+  },
   "engines": {
     "comment": "指定您的东西适用的 node 版本",
     "node": ">=16"

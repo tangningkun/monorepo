@@ -51,6 +51,9 @@ const lifeCycles: FrameworkLifeCycles<any> = {
     },
 };
 
+/**
+ * 注册服务
+ */
 export function setupRegisterMicroAsync() {
     registerMicroApps(apps, lifeCycles);
 }
