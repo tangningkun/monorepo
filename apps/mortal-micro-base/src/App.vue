@@ -1,38 +1,32 @@
-<template>
-    <div></div>
-</template>
+<script setup lang="ts">
+    import MicroContainer from './components/MicroContainer.vue';
 
-<script lang="ts" setup></script>
-
-<style lang="less"></style>
-
-<!-- <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+    // import HelloWorld from './components/HelloWorld.vue';
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+    <div>
+        <div>mortal-micro-base</div>
+        <router-link to="/app/mortal-sub-demo01/home">home</router-link>|
+        <router-link to="/app/mortal-sub-demo01/about">about</router-link>
+        <!-- <keep-alive> -->
+        <router-view></router-view>
+        <MicroContainer />
+        <!-- </keep-alive> -->
+    </div>
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style> -->
+    .logo {
+        height: 6em;
+        padding: 1.5em;
+        will-change: filter;
+        transition: filter 300ms;
+    }
+    .logo:hover {
+        filter: drop-shadow(0 0 2em #646cffaa);
+    }
+    .logo.vue:hover {
+        filter: drop-shadow(0 0 2em #42b883aa);
+    }
+</style>

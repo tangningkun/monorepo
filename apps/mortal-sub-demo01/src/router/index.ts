@@ -1,5 +1,4 @@
-import { createWebHashHistory, createRouter } from 'vue-router';
-// import { qiankunWindow } from 'vite-plugin-qiankun/dist/helper';
+import { createRouter, createWebHistory } from 'vue-router';
 import { App } from 'vue';
 
 export const constantRoutes = [
@@ -21,12 +20,8 @@ export const constantRoutes = [
     },
 ];
 
-// const base = qiankunWindow.__POWERED_BY_QIANKUN__ ? `${parentBase}${packagejson.name}` : '/app2';
-
-// const base = '/app2';
-
 export const router = createRouter({
-    history: createWebHashHistory(),
+    history: createWebHistory(import.meta.env.BASE_URL),
     routes: constantRoutes,
 });
 

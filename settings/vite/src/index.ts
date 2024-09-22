@@ -1,7 +1,7 @@
 import { ConfigEnv, loadEnv, UserConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
-import { resolve } from 'path';
-import qiankun from 'vite-plugin-qiankun';
+// import { resolve } from 'path';
+import { fileURLToPath } from 'url';
 
 export async function createViteConfig({ command, mode, isSsrBuild, isPreview }: ConfigEnv, isBuildMrco: boolean = false): Promise<UserConfig> {
     console.log('command==>', command);
@@ -30,7 +30,7 @@ export async function createViteConfig({ command, mode, isSsrBuild, isPreview }:
             alias: [
                 {
                     find: '@',
-                    replacement: resolve(root, 'src'),
+                    replacement: fileURLToPath(new URL('./src', import.meta.url)), //resolve(root, 'src'),
                 },
             ],
         },

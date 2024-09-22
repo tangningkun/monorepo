@@ -9,9 +9,9 @@
   },
   "keywords": [],
   "dependencies": {
-    "@ant-design/colors": "^7.0.2",
-    "@vueuse/core": "^10.9.0",
-    "dayjs": "^1.11.10",
+    "@ant-design/colors": "^7.1.0",
+    "@vueuse/core": "^10.11.1",
+    "dayjs": "^1.11.13",
     "lodash-es": "^4.17.21"
   }
 }
